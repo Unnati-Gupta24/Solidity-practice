@@ -24,3 +24,10 @@ contract B{
 contract C is A("jason",22),B("NYC",100000){
 
 }
+
+contract D is A,B{
+
+    constructor() A("raul",24) B("Bay Area",200000){
+
+    }
+}
