@@ -41,3 +41,12 @@ contract E is A,B{
     constructor(string memory _name,uint _age,string memory _add,uint _salary) A(_name,_age) B(_add,_salary){
     }
 }
+
+//dynamic and static passing of values
+
+contract F is A("loius",28),B{
+
+    constructor(string memory _add,uint _salary) B(_add,_salary){
+    
+    }
+}
