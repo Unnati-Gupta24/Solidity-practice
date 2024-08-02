@@ -21,6 +21,8 @@ contract B{
     }
 }
 
+//static passing of values
+
 contract C is A("jason",22),B("NYC",100000){
 
 }
@@ -29,5 +31,13 @@ contract D is A,B{
 
     constructor() A("raul",24) B("Bay Area",200000){
 
+    }
+}
+
+//dynamic passing of values
+
+contract E{
+
+    constructor(string memory _name,uint _age,string memory _add,uint _salary) A(_name,_age) B(_add,_salary){
     }
 }
