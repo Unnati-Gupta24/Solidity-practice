@@ -22,12 +22,17 @@ contract B{
 }
 
 //static passing of values
+//order of execution
+//A,B,C
 
 contract C is A("jason",22),B("NYC",100000){
 
 }
 
-contract D is A,B{
+//order of execution
+//B,A,D
+
+contract D is B,A{
 
     constructor() A("raul",24) B("Bay Area",200000){
 
