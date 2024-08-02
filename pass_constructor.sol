@@ -24,6 +24,7 @@ contract B{
 //static passing of values
 //order of execution
 //A,B,C
+//order of inheritance = order of execution
 
 contract C is A("jason",22),B("NYC",100000){
 
